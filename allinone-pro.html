@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090d18">
+<title>ALLINONE PRO — כל הכלים במקום אחד</title>
+<style>
+:root{--bg:#090d18;--panel:#111a2b;--panel2:#172238;--line:#263650;--text:#f4f7ff;--muted:#9eacc4;--accent:#8b7cff;--cyan:#42d6c5;--gold:#ffd36b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% -10%,#27305a 0,transparent 38%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;min-height:100vh}
+button,input,textarea,select{font:inherit}button{cursor:pointer}
+.wrap{max-width:1050px;margin:auto;padding:18px 16px 50px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0 26px}
+.logo{font-weight:900;letter-spacing:1px;font-size:22px}.logo span{color:var(--accent)}
+.protag{border:1px solid #5e53bd;color:#d8d3ff;background:#28224e;border-radius:99px;padding:6px 11px;font-size:12px;font-weight:800}
+.hero{padding:26px 22px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(125deg,#171f39,#111a2b 65%,#182b3a);position:relative;overflow:hidden}
+.hero:after{content:"✦";position:absolute;font-size:160px;color:#ffffff08;left:20px;top:-45px}
+.eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:1px}
+h1{font-size:clamp(30px,7vw,48px);line-height:1.1;margin:12px 0}
+.sub{color:var(--muted);line-height:1.7;max-width:560px;margin:0}
+.price{display:flex;align-items:center;gap:10px;margin-top:22px;flex-wrap:wrap}
+.price strong{font-size:32px;color:var(--gold)}.price small{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:11px;margin:22px 0}
+.tool{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:15px;text-align:right;color:var(--text);min-height:115px;transition:.18s}
+.tool:hover,.tool.active{border-color:var(--accent);background:var(--panel2);transform:translateY(-2px)}
+.tool .emoji{font-size:25px;display:block;margin-bottom:9px}.tool b{display:block}.tool small{color:var(--muted);display:block;margin-top:5px}
+.workspace{background:var(--panel);border:1px solid var(--line);border-radius:21px;padding:18px;margin-top:12px}
+.workspace h2{margin:0 0 6px;font-size:21px}.hint{color:var(--muted);font-size:13px;margin:0 0 16px}
+label{display:block;font-size:13px;color:#c7d2e6;margin:12px 0 7px}
+input,textarea,select{width:100%;border:1px solid var(--line);background:#0c1322;color:var(--text);border-radius:12px;padding:12px;outline:none}
+textarea{min-height:105px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:var(--accent)}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:13px}
+.primary,.secondary{border:0;border-radius:12px;padding:11px 16px;font-weight:800}
+.primary{background:linear-gradient(100deg,var(--accent),#6b9cff);color:white}.secondary{background:#25334c;color:#e6edff}
+.output{white-space:pre-wrap;line-height:1.65;background:#0b1220;border:1px dashed #3a4a68;border-radius:12px;padding:13px;margin-top:14px;min-height:55px;color:#e8edfa;word-break:break-word}
+.notice{font-size:12px;color:var(--muted);line-height:1.6;margin-top:14px}
+footer{text-align:center;color:#75839d;font-size:12px;margin:25px 0}
+@media(min-width:700px){.hero{padding:38px}.workspace{padding:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo">ALLINONE<span>.</span></div><div class="protag">✦ PRO TOOLS</div></header>
+<section class="hero">
+<div class="eyebrow">הארגז הדיגיטלי שלך</div>
+<h1>כל הכלים שלך.<br>במקום אחד.</h1>
+<p class="sub">יוצרים תוכן, מפתחים רעיונות ומכינים טקסטים — במהירות, ישירות מהטלפון וללא הרשמה.</p>
+<div class="price"><strong>₪2</strong><div><b>תשלום חד־פעמי</b><br><small>תכנון גישה לכל החיים · ללא מנוי</small></div></div>
+</section>
+<div class="grid" id="tools">
+<button class="tool active" data-tool="text"><span class="emoji">✍️</span><b>מחולל טקסטים</b><small>פוסטים, תיאורים והודעות</small></button>
+<button class="tool" data-tool="ideas"><span class="emoji">🎬</span><b>רעיונות לטיקטוק</b><small>רעיונות לסרטונים</small></button>
+<button class="tool" data-tool="user"><span class="emoji">⚡</span><b>שמות משתמש</b><small>שמות מקוריים</small></button>
+<button class="tool" data-tool="tags"><span class="emoji">#️⃣</span><b>מחולל האשטגים</b><small>תגיות לפי נושא</small></button>
+<button class="tool" data-tool="prompt"><span class="emoji">🤖</span><b>פרומפט לסרטון</b><small>תיאור מוכן למחולל וידאו</small></button>
+<button class="tool" data-tool="bio"><span class="emoji">💬</span><b>ביו לפרופיל</b><small>תיאור קצר ומושך</small></button>
+</div>
+<section class="workspace">
+<h2 id="toolTitle">✍️ מחולל טקסטים</h2>
+<p class="hint" id="toolHint">מלאו כמה פרטים וקבלו טיוטה שאפשר להעתיק ולערוך.</p>
+<label for="topic">על מה ליצור?</label>
+<input id="topic" placeholder="לדוגמה: ערוץ הגיימינג החדש שלי">
+<label for="style">סגנון</label>
+<select id="style"><option value="קליל וזורם">קליל וזורם</option><option value="מקצועי">מקצועי</option><option value="מצחיק">מצחיק</option><option value="מרגש">מרגש</option><option value="קצר וישיר">קצר וישיר</option></select>
+<div id="extraWrap"><label for="extra">פרטים נוספים (לא חובה)</label><textarea id="extra" placeholder="מה חשוב שיופיע?"></textarea></div>
+<div class="actions"><button class="primary" id="generate">✨ יצירה</button><button class="secondary" id="copy">העתקה</button><button class="secondary" id="clear">ניקוי</button></div>
+<div class="output" id="output" aria-live="polite">התוצאה תופיע כאן…</div>
+<p class="notice">הכלים בגרסה הזו פועלים מקומית בדפדפן באמצעות תבניות חכמות — הם אינם שירות AI חיצוני. ניתן להשתמש בהם ללא חשבון וללא שליחת מידע לשרת.</p>
+</section>
+<footer>ALLINONE · גרסת התחלה · אין סליקה פעילה באתר הזה</footer>
+</div>
+<script>
+const configs={
+text:{title:"✍️ מחולל טקסטים",hint:"יוצרים טיוטה לפוסט, תיאור או הודעה.",placeholder:"לדוגמה: ערוץ הגיימינג החדש שלי",extra:"פרטים נוספים (לא חובה)"},
+ideas:{title:"🎬 רעיונות לטיקטוק",hint:"קבלו כיוונים לסרטונים שאפשר לצלם.",placeholder:"לדוגמה: משחקי אימה",extra:"מה יש ברשותכם לצילום? (לא חובה)"},
+user:{title:"⚡ מחולל שמות משתמש",hint:"יוצרים הצעות לשם משתמש לפי נושא וסגנון.",placeholder:"לדוגמה: גיימינג, כדורגל, ערוץ אישי",extra:"מילה שתרצו לשלב (לא חובה)"},
+tags:{title:"#️⃣ מחולל האשטגים",hint:"מייצרים האשטגים רלוונטיים לנושא.",placeholder:"לדוגמה: מיינקראפט",extra:"פלטפורמה או קהל יעד (לא חובה)"},
+prompt:{title:"🤖 פרומפט לסרטון",hint:"מנסחים תיאור מפורט שאפשר להדביק בכלי יצירת וידאו.",placeholder:"לדוגמה: מרדף משטרתי בעיר עתידנית",extra:"יחס מסך, צבעים או אפקטים (לא חובה)"},
+bio:{title:"💬 ביו לפרופיל",hint:"יוצרים כמה אפשרויות לתיאור קצר של הפרופיל.",placeholder:"לדוגמה: יוצר תוכן גיימינג",extra:"תחומי עניין או סגנון (לא חובה)"}
+};
+let current="text",last="";
+const $=id=>document.getElementById(id);
+document.querySelectorAll(".tool").forEach(btn=>btn.addEventListener("click",()=>{
+ current=btn.dataset.tool;document.querySelectorAll(".tool").forEach(x=>x.classList.toggle("active",x===btn));
+ $("toolTitle").textContent=configs[current].title;$("toolHint").textContent=configs[current].hint;
+ $("topic").placeholder=configs[current].placeholder;$("extra").placeholder=configs[current].extra;
+ $("output").textContent="התוצאה תופיע כאן…";
+}));
+function create(){
+ const topic=$("topic").value.trim(),extra=$("extra").value.trim(),style=$("style").value;
+ if(!topic){$("output").textContent="צריך לכתוב נושא כדי להתחיל 🙂";return}
+ const safe=topic.replace(/[<>]/g,""),detail=extra?` ${extra.replace(/[<>]/g,"")}`:"";
+ let result="";
+ if(current==="text") result=`${safe} — ${style}\n\nיש לנו משהו חדש לשתף אתכם! ${safe} הוא בדיוק מה שאנחנו עובדים עליו עכשיו, ואנחנו ממש מתרגשים להראות לכם.${detail}\n\nמה דעתכם? כתבו לנו בתגובות!`;
+ if(current==="ideas") result=[`אתגר קצר בנושא ${safe}: האם תצליחו לעמוד במשימה?`,`3 דברים מפתיעים שלא ידעתם על ${safe}`,`תגובה בזמן אמת: בודקים את ${safe} בפעם הראשונה`,`לפני ואחרי: התהליך שלי עם ${safe}`,`שאלת הקהל: מה הדבר שהכי הייתם רוצים לראות בנושא ${safe}?`].join("\n\n");
+ if(current==="user"){let base=safe.toLowerCase().replace(/[^\p{L}\p{N}]+/gu,"");let suffix=["Zone","Live","Pro","Hub","X","Vibes","Play","IL","Official","Studio"];result=suffix.map((s,i)=>`${base}${s}${i%2?"_":"."}`).join("\n");if(extra)result+=`\n${extra}${suffix[0]}\n${extra}_${suffix[2]}`}
+ if(current==="tags"){let words=safe.split(/\s+/).filter(Boolean).map(w=>w.replace(/[^\p{L}\p{N}]/gu,""));result=[...new Set([...words.map(w=>"#"+w),...["טיקטוק","תוכן","ישראל","מומלץ","בשבילכם","יוצרים","סרטון","עוקבים"].map(x=>"#"+x)])].join(" ")}
+ if(current==="prompt") result=`צור סרטון ${style} בנושא: ${safe}.\n\nסצנה: הצג את הנושא בצורה ברורה ומעניינת, עם קומפוזיציה קולנועית, תנועת מצלמה חלקה, תאורה מוקפדת, פרטים חדים ורקע עשיר.\nאווירה: ${style}.\nפרטים נוספים: ${extra||"בחר פרטים חזותיים שמתאימים לנושא"}.\nפורמט מומלץ: אנכי 9:16, איכות גבוהה, ללא טקסט אקראי על המסך.`;
+ if(current==="bio") result=[`🎮 ${safe}\n✨ תוכן חדש ועדכונים\n👇 מוזמנים להצטרף`,`🚀 ${safe}\nכאן בשביל ליצור, לשתף ולהנות\n📩 דברו איתי`,`⭐ ${safe}\nתוכן | יצירה | רגעים מיוחדים`].join("\n\n");
+ last=result;$("output").textContent=result;
+}
+$("generate").addEventListener("click",create);
+$("copy").addEventListener("click",async()=>{if(!last){$("output").textContent="קודם צריך ליצור תוצאה.";return}try{await navigator.clipboard.writeText(last);$("copy").textContent="הועתק ✓";setTimeout(()=>$("copy").textContent="העתקה",1400)}catch(e){$("output").textContent=last+"\n\nסמנו והעתיקו את הטקסט ידנית."}});
+$("clear").addEventListener("click",()=>{$("topic").value="";$("extra").value="";$("output").textContent="התוצאה תופיע כאן…";last=""});
+</script>
+</body></html>
